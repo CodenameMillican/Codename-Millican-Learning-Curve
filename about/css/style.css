@@ -1,61 +1,118 @@
 body
 {
-color: white;
-background-color:black;
-}
-h1
-{
-font-size:36pt;
-}
-h2
-{
-color:black;
-}
-p
-{
+margin-top:100px;
+margin-bottom:100px;
+margin-right:50px;
 margin-left:50px;
-margin-right:50px
+color:white;
+background-image: url('http://mmmillican.com/about/cards.jpg');
+background-repeat:no-repeat;
+background-position:center center;
+-o-background-size: 100% 100%, auto;
+-moz-background-size: 100% 100%, auto;
+-webkit-background-size: 100% 100%, auto;
+background-size: 100% 100%, auto;
+font-size:16pt;
+
+/************** topNav *****************/
+
+/* JS disabled styles */  
+.no-js nav li:hover ul 
+{ 
+display:block; 
+}  
+  
+/* base nav styles */  
+
+nav 
+{ 
+display:block;
+margin:0 auto 20px;
+border:1px solid #222;
+position:relative;
+background-color:#6a6a6a;
+font:16px Tahoma, Sans-serif;
+}  
+
+nav ul 
+{ 
+padding:0; margin:0;
+}  
+
+nav li 
+{ 
+position:relative; float:left; list-style-type:none;
+}  
+
+nav ul:after 
+{ 
+content:"."; 
+display:block; 
+height:0; 
+clear:both; 
+visibility:hidden; 
+}  
+
+nav li a 
+{ display:block;
+padding:10px 20px;
+border-left:1px solid #999; 
+border-right:1px solid #222; 
+color:#eee; 
+text-decoration:none; 
+}  
+
+nav li a:focus 
+{ 
+outline:none; 
+text-decoration:underline; 
+}  
+
+nav li:first-child a 
+{ 
+border-left:none; 
+}  
+
+nav li.last a 
+{ 
+border-right:none; 
+}  
+
+nav a span 
+{ 
+display:block;
+float:rightright; 
+margin-left:5px; 
+}  
+
+nav ul ul 
+{ 
+display:none; 
+width:100%; 
+position:absolute; 
+left:0; 
+background:#6a6a6a; 
+}  
+
+nav ul ul li 
+{ 
+float:none; 
+}  
+
+nav ul ul a 
+{ 
+padding:5px 10px; 
+border-left:none; 
+border-right:none; 
+font-size:14px; 
+}  
+
+nav ul ul a:hover 
+{ 
+background-color:#555; 
 }
 
-/*************** nav-menu *************
-#nav-menu ul
-{
-list-style: none;
-padding: 0;
-margin: 0;
-}
-
-#nav-menu li
-{
-float: left;
-margin: 0 0.15em;
-}
-
-#nav-menu li a
-{
-background: url(background.gif) #fff bottom left repeat-x;
-height: 2em;
-line-height: 2em;
-float: left;
-width: 9em;
-display: block;
-border: 0.1em solid #dcdce9;
-color: #0d2474;
-text-decoration: none;
-text-align: center;
-}
-
-/* Hide from IE5-Mac \*/
-#nav-menu li a
-{
-float: none
-}
-/* End hide */
-
-#nav-menu
-{
-width:30em
-}
+/************** topNav *****************/
 
 /*************** header ***************/
 #header
