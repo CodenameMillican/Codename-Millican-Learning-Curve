@@ -13,38 +13,45 @@ background-position:center center;
 -webkit-background-size: 100% 100%, auto;
 background-size: 100% 100%, auto;
 font-size:16pt;
+}
+
+#wrap
+{
+    width:1070px;
+	margin:0px auto;
+}
 
 /************** topNav *****************/
 
 /* JS disabled styles */  
-.no-js nav li:hover ul 
+.no-js 
+#nav li:hover ul 
 { 
 display:block; 
 }  
   
 /* base nav styles */  
 
-nav 
+#nav 
 { 
 display:block;
 margin:0 auto 20px;
-border:1px solid #222;
+border:0.5px solid #222;
 position:relative;
-background-color:#6a6a6a;
-font:16px Tahoma, Sans-serif;
+font:24px;
 }  
 
-nav ul 
+#nav ul 
 { 
 padding:0; margin:0;
 }  
 
-nav li 
+#nav li 
 { 
 position:relative; float:left; list-style-type:none;
 }  
 
-nav ul:after 
+#nav ul:after 
 { 
 content:"."; 
 display:block; 
@@ -53,7 +60,7 @@ clear:both;
 visibility:hidden; 
 }  
 
-nav li a 
+#nav li a 
 { display:block;
 padding:10px 20px;
 border-left:1px solid #999; 
@@ -62,30 +69,30 @@ color:#eee;
 text-decoration:none; 
 }  
 
-nav li a:focus 
+#nav li a:focus 
 { 
 outline:none; 
 text-decoration:underline; 
 }  
 
-nav li:first-child a 
+#nav li:first-child a 
 { 
 border-left:none; 
 }  
 
-nav li.last a 
+#nav li.last a 
 { 
 border-right:none; 
 }  
 
-nav a span 
+#nav a span 
 { 
 display:block;
 float:rightright; 
 margin-left:5px; 
 }  
 
-nav ul ul 
+#nav ul ul 
 { 
 display:none; 
 width:100%; 
@@ -94,12 +101,12 @@ left:0;
 background:#6a6a6a; 
 }  
 
-nav ul ul li 
+#nav ul ul li 
 { 
 float:none; 
 }  
 
-nav ul ul a 
+#nav ul ul a 
 { 
 padding:5px 10px; 
 border-left:none; 
@@ -107,7 +114,7 @@ border-right:none;
 font-size:14px; 
 }  
 
-nav ul ul a:hover 
+#nav ul ul a:hover 
 { 
 background-color:#555; 
 }
