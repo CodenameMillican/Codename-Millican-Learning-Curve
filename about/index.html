@@ -1,4 +1,5 @@
 <!doctype html>
+
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
@@ -26,41 +27,66 @@
   <!-- All JavaScript at the bottom, except for Modernizr / Respond.
        Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
        For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="js/libs/modernizr-2.0.6.min.js"></script>
-</head>
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>  
+  <!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+  <![endif]-->  
+  
+  </head>
 
-<body>
+  <body class="no-js">
+  
+  
+  <!--topNav-->
+  
+  <nav id="topNav">  
+                <ul>  
+                    <li><a href="#" title="Nav Link 1">Nav Link 1</a></li>  
+                <li>  
+                    <a href="#" title="Nav Link 1">Nav Link 2  
+                    <ul>  
+                        <li><a href="#" title="Sub Nav Link 1">Sub Nav Link 1</a></li>  
+                        <li><a href="#" title="Sub Nav Link 2">Sub Nav Link 2</a></li>  
+                        <li><a href="#" title="Sub Nav Link 3">Sub Nav Link 3</a></li>  
+                        <li><a href="#" title="Sub Nav Link 4">Sub Nav Link 4</a></li>  
+                        <li class="last"><a href="#" title="Sub Nav Link 5">Sub Nav Link 5</a></li>  
+                    </ul>  
+                </li>  
+                <li><a href="#" title="Nav Link 1">Nav Link 3</a></li>  
+                <li><a href="#" title="Nav Link 1">Nav Link 4</a></li>  
+                <li><a href="#" title="Nav Link 1">Nav Link 5</a></li>  
+            </ul>  
+        </nav>  
+         
+  <!--topNav-->
   
   <!-- Header -->
   
-<div id="header">
-  <img src="http://mmmillican.com/cards.jpg" alt="cards" width="250" height="250"/>
-  <p>code @ mmmillican dot com</p>
-</div> <!--header-->
-
-<div id="menu">
-  <ul>
-    <li><a href="http://mmmillican.com/blog">Blog</a></li>
-    <li><a href="http://mmmillican.com/resume">Resume</a></li>
-    <li><a href="http://mmmillican.com/echo">Echo</a></li>
-    <li><a href="http://mmmillican.com/social">Social</a></li>
-    <li><a href="mmmillican.com/contact.html">Contact</a></li>
-  </ul>
-</div><!--menu-->
+  <div id="header">
   
-  <h1>Mysterious</h1>
-<div id="main">
+  <p>code @ mmmillican dot com</p>
+  </div> 
+
+  <!--header-->
+
+  <hr />
+  
+  <!--Main-->
+  
+  <div id="main">
+  
   <p>Welcome to <a href="http://mmmillican">mmmillican.com</a>, The hub of everything Michael M. Millican. </p> 
   <p>Michael Millican is currently the Lead Information Officer at <a href="http://pestec.com" target="_blank"> Pestec Integrated Pest Managaement</a> </p>
   
   </div><!--main-->
 
-<hr />
+  <!--Main-->
 
+  <hr />
 
   <div id="footer">
 
-<p>You can find more information about Michael on:</p>
+  <p>You can find more information about Michael on:</p>
 
 
   <ul>
@@ -69,11 +95,12 @@
     <li> <a href="http://twitter.com/mmmillican">Twitter</a></li>
   </ul>
 
+  </div>
 
-</div><!--footer-->
+  <!--footer-->
 
 
-<!-- JavaScript at the bottom for fast page loading -->
+  <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Google Analytics -->
   <script type="text/javascript">
@@ -92,10 +119,15 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
+  <!-- scripts from nav/nav.html for topNav -->
+  <script src="js/jquery.js"></script>  
+  <script src="js/modernizr.js"></script>
 
   <!-- scripts concatenated and minified via ant build script-->
   <script defer src="js/plugins.js"></script>
   <script defer src="js/script.js"></script>
+  
+  
   <!-- end scripts-->
 
     
@@ -113,7 +145,7 @@
   <!--[if lt IE 7 ]>
   
     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+   <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
   
   <![endif]-->
 
