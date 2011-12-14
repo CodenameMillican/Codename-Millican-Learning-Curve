@@ -5,7 +5,7 @@ margin-bottom:100px;
 margin-right:50px;
 margin-left:50px;
 color:white;
-background-image: url('http://mmmillican.com/about/cards.png');
+background-image: url('http://mmmillican.com/social/green.png');
 background-repeat:no-repeat;
 background-position:center center;
 background-attachment:fixed;
@@ -23,8 +23,8 @@ background-color:#000000;
   margin:0px auto;
     /* Fallback for web browsers that doesn't support RGBa */
     background: rgb(0, 0, 0) transparent;
-	/* RGBa with 0.6 opacity */
-	background: rgba(0, 0, 0, 0.6);
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.6);
 	/* For IE 5.5 - 7*/
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
 	/* For IE 8*/
